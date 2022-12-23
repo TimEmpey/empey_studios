@@ -57,6 +57,7 @@ a, p {
     height: 28vw;
     padding: 0.5rem;
     background: #c7c7c78e;
+    background-image: url('../img/empey-studios-background\(2\).jpeg');
     border-radius: 20px;
     backdrop-filter: blur(5px);
     /* position: absolute; */
@@ -121,7 +122,7 @@ a, p {
 .slogan{
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
-    color: #525252;
+    color: white;
     position: relative;
     text-align: center;
     margin-top: 10vw;
@@ -130,7 +131,7 @@ a, p {
 
 .trademark{
     text-align: center;
-    color: #525252;
+    color: white;
 }
 
 .filler1{
@@ -146,26 +147,35 @@ a, p {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('../img/empey-studios-background\(2\).jpeg');
+    background-color: #FFDBC5;
+    /* background-image: url('../img/empey-studios-background\(2\).jpeg'); */
     border-bottom: 2px solid black;
 }
 
+.cube{
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.280));
+}
+
 .paragraph1{
-    text-align: center;
-    margin-inline: 15vw;
+    margin-inline: 10vw;
+    border-radius: 52px;
+    padding: 2rem;
+    background: #FFDBC5;
+    box-shadow:  20px 20px 60px #d9baa7, -20px -20px 60px #fffce3;
 }
 
 .paragraph1 h1{
     font-family: 'Barlow', sans-serif;
     font-size: 3rem;
-    color: white;
-    text-shadow: -2.5px 1.75px 2.5px rgba(0, 0, 0, 0.573);
+    color: #390122;
+    /* text-shadow: -2.5px 1.75px 2.5px rgba(0, 0, 0, 0.573); */
+    margin-bottom: 5vh;
 }
 .paragraph1 p{
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
-    color: white;
-    text-shadow: -2.5px 1.75px 2.5px rgba(0, 0, 0, 0.573);
+    color: #54003288;
+    /* text-shadow: -2.5px 1.75px 2.5px rgba(0, 0, 0, 0.573); */
 }
 
 /*--------------------------- Services ---------------------------*/

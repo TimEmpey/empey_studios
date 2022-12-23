@@ -2,8 +2,8 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 // import './css/loader.css';
-import './parallax/parallax';
-import './parallax/parallax.js';
+import './parallax/parallax.js'
+import './parallax/parallax.css'
 
 var cursor = document.querySelector('.cursor');
 var cursorinner = document.querySelector('.cursor2');
