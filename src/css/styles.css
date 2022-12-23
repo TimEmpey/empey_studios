@@ -1,0 +1,244 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&display=swap');
+
+body{
+    background-color: #DEDEDE;
+    cursor: none;
+}
+a, p {
+    cursor: none;
+}
+
+/*--------------------------- Scroller --------------------------- */
+.scroller {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    display: flex;
+    flex-direction: column;
+}
+
+.scroller section {
+    scroll-snap-align: start;
+}
+
+/*--------------------------- Nav Bar --------------------------- */
+
+
+/*---------------------------- Cursor ---------------------------*/
+.cursor {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background: black;
+    opacity: 0.3;
+    transition: all 200ms ease-out;
+    position: fixed;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transform: translate(calc(-50% + 15px), -50%);
+    z-index: 5;
+}
+.hover {
+    background-color: red;
+    opacity: 0.5;
+}
+.cursorinnerhover {
+    width: 50px;
+    height: 50px;
+    opacity: .5;
+}
+
+/*-------------------------- Intro Card -------------------------*/
+.card {
+    width: 50vw;
+    height: 28vw;
+    padding: 0.5rem;
+    background: #7575758e;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    /* position: absolute; */
+    margin-inline: 25vw;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+    border-bottom: 10px solid rgba(137, 137, 137, 0.466);
+    border-left: 8px  rgba(137, 137, 137, 0.466) outset;
+    box-shadow: -40px 50px 30px rgba(0, 0, 0, 0.280);
+    transform: skewX(10deg);
+    transition: .4s;
+    overflow: hidden;
+    color: white;
+}
+
+.card:hover {
+    height: 45rem;
+    transform: skew(0deg);
+}
+
+.align {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-self: flex-start;
+}
+
+.red {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ff605c;
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.280);
+}
+
+.yellow {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ffbd44;
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.280);
+}
+
+.green {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #00ca4e;
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.280);
+}
+
+.card h1 {
+    font-size: 5rem;
+    /* font-family: 'Montserrat', sans-serif; */
+    text-align: center;
+    margin: 2rem;
+    margin-top: 10rem;
+    text-shadow: -2.5px 1.75px 2.5px rgba(0, 0, 0, 0.573);
+}
+
+.slogan{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: #525252;
+    position: relative;
+    text-align: center;
+    margin-top: 10vw;
+    /* text-shadow: -2.5px 1.75px 2.5px rgba(0, 0, 0, 0.573); */
+}
+
+.trademark{
+    text-align: center;
+    color: #525252;
+}
+
+/*-------------------------- Paragraph 1 -------------------------*/
+.text-wrapper{
+    height: 50vh;
+    width: 75vw;
+    border-radius: 50px;
+    background: #dedede;
+    box-shadow: inset 24px 24px 48px #bdbdbd, inset -24px -24px 48px #ffffff;
+    margin-inline: 15rem;
+    margin-top: 25vh;
+    margin-bottom: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paragraph1{
+    text-align: center;
+    margin-inline: 5vw;
+}
+
+.paragraph1 h1{
+    font-family: 'Barlow', sans-serif;
+    font-size: 3rem;
+    color: #525252;
+}
+.paragraph1 p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #525252;
+}
+
+/*--------------------------- Services ---------------------------*/
+.service-wrapper{
+    height: 50vh;
+    margin-top: 10vh;
+    margin-bottom: 25vh;
+    font-family: 'Barlow', sans-serif;
+}
+
+.service-wrapper .col-4{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+/*-------------------------- Slogan Card -------------------------*/
+.box-wrapper{
+    margin-inline: 25vw;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    display: flex;
+    justify-content: center;
+    border-radius: 29px;
+    background: #dedede;
+    box-shadow:  35px 35px 70px #979797, -35px -35px 70px #ffffff;
+    width: 50vw;
+    height: 60vh;
+}
+
+.box {
+    width: 50vw;
+    height: 60vh;
+    border-radius: 29px;
+    background: white;
+    display: flex;
+}
+
+.box p {
+    height: 100%;
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .5s;
+    background: #dedede;
+    border: 1px solid #dedede;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.box p:hover {
+    flex: 4;
+    cursor: none;
+    color: #00abfb;
+    background-color: #797979;
+}
+
+.inner-box1{
+    border-radius: 29px 0px 0px 29px;
+}
+.inner-box3{
+    border-radius: 0px 29px 29px 0px;
+}
+
+.box p span {
+    min-width: 14em;
+    padding: .5em;
+    text-align: center;
+    transform: rotate(-90deg);
+    transition: all .5s;
+    text-transform: uppercase;
+    /* color: rgb(188, 20, 188); */
+    letter-spacing: .1em;
+}
+
+.box p:hover span {
+    transform: rotate(0);
+}
