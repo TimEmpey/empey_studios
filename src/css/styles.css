@@ -51,9 +51,147 @@ a, p {
     opacity: .5;
 }
 
-/*-------------------------- Intro Card -------------------------*/
-.landing_screen, .scroller{
-    height: 90vh;
+/*-------------------------- Paragraph 1 -------------------------*/
+.company_statement{
+    background-color: #041629;
+    border-top: 1px solid #4D5761;
+    border-bottom: 1px solid #4D5761;
+    display: flex;
+    align-items: center;
+}
+
+.text-wrapper{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.paragraph1{
+    padding: 2rem;
+}
+
+.paragraph1 h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    color: white;
+    /* text-shadow: -2.5px 1.75px 2.5px rgba(0, 0, 0, 0.573); */
+    margin-bottom: 2rem;
+}
+
+.paragraph1 p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    width: 40vw;
+    /* text-shadow: -2.5px 1.75px 2.5px rgba(0, 0, 0, 0.573); */
+}
+
+/*-------------------------- Slogan Card -------------------------*/
+.box-wrapper{
+    display: flex;
+    align-items: center;
+    margin-inline: 10vw;
+    border-radius: 29px;
+    background: #041629;
+    width: 25vw;
+    height: 15vh;
+}
+
+.box {
+    width: 50vw;
+    height: 50vh;
+    border-radius: 29px;
+    background: white;
+    display: flex;
+}
+
+.box p {
+    height: 100%;
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .5s;
+    background: #dedede;
+    border: 1px solid #dedede;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.box p:hover{
+    flex: 4;
+    cursor: none;
+    color: #797979;
+    background-color: #000E1D ;
+}
+.inner-box1:hover{
+    background-image: url('../img/flow.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.inner-box2:hover{
+    background-image: url('../img/function.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.inner-box3:hover{
+    background-image: url('../img/data.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.inner-box1{
+    border-radius: 29px 0px 0px 29px;
+}
+.inner-box3{
+    border-radius: 0px 29px 29px 0px;
+}
+
+.box p span {
+    min-width: 14em;
+    padding: .5em;
+    text-align: center;
+    transform: rotate(-90deg);
+    transition: all .5s;
+    text-transform: uppercase;
+    /* color: rgb(188, 20, 188); */
+    letter-spacing: .1em;
+}
+
+.box p:hover span {
+    transform: rotate(0);
+}
+
+
+/*--------------------------- Services ---------------------------*/
+.service-wrapper{
+    height: 50vh;
+    margin-top: 5vh;
+    margin-bottom: 15vh;
+    font-family: 'Barlow', sans-serif;
+    color: white;
+}
+
+.service-wrapper svg{
+    margin-bottom: .5rem;
+}
+
+.service-wrapper .col-4{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+/*-------------------------- Footer Card -------------------------*/
+.landing_screen{
+    height: 100vh;
+    border-top: 1px solid #4D5761;
+    border-bottom: 1px solid #4D5761;
+    background-color: #041629;
 }
 
 .card {
@@ -144,138 +282,4 @@ a, p {
     height: 10vh;
     /* background-image: linear-gradient(#DEDEDE, #2E102A); */
     padding-bottom: 5vh;
-}
-/*-------------------------- Paragraph 1 -------------------------*/
-.company_statement{
-    background-color: #041629;
-    border-top: 1px solid #4D5761;
-    border-bottom: 1px solid #4D5761;
-    display: flex;
-    align-items: center;
-}
-
-.text-wrapper{
-    height: 100vh;
-    display: flex;
-    align-items: center;
-}
-
-.paragraph1{
-    padding: 2rem;
-}
-
-.paragraph1 h1{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3rem;
-    color: white;
-    /* text-shadow: -2.5px 1.75px 2.5px rgba(0, 0, 0, 0.573); */
-    margin-bottom: 2rem;
-}
-
-.paragraph1 p{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-    color: white;
-    width: 50vw;
-    /* text-shadow: -2.5px 1.75px 2.5px rgba(0, 0, 0, 0.573); */
-}
-
-/*-------------------------- Slogan Card -------------------------*/
-.box-wrapper{
-    display: flex;
-    align-items: center;
-    margin-inline: 10vw;
-    border-radius: 29px;
-    background: #041629;
-    width: 25vw;
-    height: 15vh;
-}
-
-.box {
-    width: 50vw;
-    height: 50vh;
-    border-radius: 29px;
-    background: white;
-    display: flex;
-}
-
-.box p {
-    height: 100%;
-    flex: 1;
-    overflow: hidden;
-    cursor: pointer;
-    transition: all .5s;
-    background: #dedede;
-    border: 1px solid #dedede;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: none;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.box p:hover{
-    flex: 4;
-    cursor: none;
-    color: #797979;
-    background-color: #000E1D ;
-}
-.inner-box1:hover{
-    background-image: url('../img/flow.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.inner-box2:hover{
-    background-image: url('../img/function.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.inner-box3:hover{
-    background-image: url('../img/data.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.inner-box1{
-    border-radius: 29px 0px 0px 29px;
-}
-.inner-box3{
-    border-radius: 0px 29px 29px 0px;
-}
-
-.box p span {
-    min-width: 14em;
-    padding: .5em;
-    text-align: center;
-    transform: rotate(-90deg);
-    transition: all .5s;
-    text-transform: uppercase;
-    /* color: rgb(188, 20, 188); */
-    letter-spacing: .1em;
-}
-
-.box p:hover span {
-    transform: rotate(0);
-}
-
-
-/*--------------------------- Services ---------------------------*/
-.service-wrapper{
-    height: 50vh;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    font-family: 'Barlow', sans-serif;
-    color: white;
-}
-
-.service-wrapper svg{
-    margin-bottom: .5rem;
-}
-
-.service-wrapper .col-4{
-    margin-top: 5vh;
-    margin-bottom: 5vh;
 }
