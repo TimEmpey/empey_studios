@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&display=swap');
 
 body{
-    background-color: #DEDEDE;
+    background-color: #000E1D;
     cursor: none;
 }
 a, p {
@@ -11,7 +11,7 @@ a, p {
 }
 
 /*--------------------------- Scroller --------------------------- */
-.scroller {
+/* .scroller {
     height: 100vh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
@@ -21,7 +21,7 @@ a, p {
 
 .scroller section {
     scroll-snap-align: start;
-}
+} */
 
 /*--------------------------- Nav Bar --------------------------- */
 
@@ -31,7 +31,7 @@ a, p {
     width: 20px;
     height: 20px;
     border-radius: 100%;
-    background: black;
+    background: rgb(255, 255, 255);
     opacity: 0.3;
     transition: all 200ms ease-out;
     position: fixed;
@@ -52,12 +52,17 @@ a, p {
 }
 
 /*-------------------------- Intro Card -------------------------*/
+.landing_screen, .scroller{
+    height: 90vh;
+}
+
 .card {
     width: 50vw;
     height: 28vw;
     padding: 0.5rem;
-    background: #c7c7c78e;
-    background-image: url('../img/empey-studios-background\(2\).jpeg');
+    /* background: #c7c7c78e; */
+    background-image: url('../img/wp9583602.jpg');
+    background-position-y:  0rem;
     border-radius: 20px;
     backdrop-filter: blur(5px);
     /* position: absolute; */
@@ -137,77 +142,58 @@ a, p {
 .filler1{
     width: 100vw;
     height: 10vh;
-    background-image: linear-gradient(#DEDEDE, #FFDBC5);
+    /* background-image: linear-gradient(#DEDEDE, #2E102A); */
     padding-bottom: 5vh;
 }
 /*-------------------------- Paragraph 1 -------------------------*/
-.text-wrapper{
-    height: 100vh;
-    width: 100vw;
+.company_statement{
+    background-color: #041629;
+    border-top: 1px solid #4D5761;
+    border-bottom: 1px solid #4D5761;
     display: flex;
-    justify-content: center;
     align-items: center;
-    background-color: #FFDBC5;
-    /* background-image: url('../img/empey-studios-background\(2\).jpeg'); */
-    border-bottom: 2px solid black;
 }
 
-.cube{
-    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.280));
+.text-wrapper{
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 .paragraph1{
-    margin-inline: 10vw;
-    border-radius: 52px;
     padding: 2rem;
-    background: #FFDBC5;
-    box-shadow:  20px 20px 60px #d9baa7, -20px -20px 60px #fffce3;
 }
 
 .paragraph1 h1{
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 3rem;
-    color: #390122;
+    color: white;
     /* text-shadow: -2.5px 1.75px 2.5px rgba(0, 0, 0, 0.573); */
-    margin-bottom: 5vh;
+    margin-bottom: 2rem;
 }
+
 .paragraph1 p{
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
-    color: #54003288;
+    color: white;
+    width: 50vw;
     /* text-shadow: -2.5px 1.75px 2.5px rgba(0, 0, 0, 0.573); */
-}
-
-/*--------------------------- Services ---------------------------*/
-.service-wrapper{
-    height: 50vh;
-    margin-top: 10vh;
-    margin-bottom: 25vh;
-    font-family: 'Barlow', sans-serif;
-}
-
-.service-wrapper .col-4{
-    margin-top: 10vh;
-    margin-bottom: 10vh;
 }
 
 /*-------------------------- Slogan Card -------------------------*/
 .box-wrapper{
-    margin-inline: 25vw;
-    margin-top: 20vh;
-    margin-bottom: 20vh;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    margin-inline: 10vw;
     border-radius: 29px;
-    background: #dedede;
-    box-shadow:  35px 35px 70px #979797, -35px -35px 70px #ffffff;
-    width: 50vw;
-    height: 60vh;
+    background: #041629;
+    width: 25vw;
+    height: 15vh;
 }
 
 .box {
     width: 50vw;
-    height: 60vh;
+    height: 50vh;
     border-radius: 29px;
     background: white;
     display: flex;
@@ -228,11 +214,29 @@ a, p {
     font-family: 'Montserrat', sans-serif;
 }
 
-.box p:hover {
+.box p:hover{
     flex: 4;
     cursor: none;
     color: #797979;
-    background-color: #540032 ;
+    background-color: #000E1D ;
+}
+.inner-box1:hover{
+    background-image: url('../img/flow.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.inner-box2:hover{
+    background-image: url('../img/function.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.inner-box3:hover{
+    background-image: url('../img/data.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .inner-box1{
@@ -255,4 +259,23 @@ a, p {
 
 .box p:hover span {
     transform: rotate(0);
+}
+
+
+/*--------------------------- Services ---------------------------*/
+.service-wrapper{
+    height: 50vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    font-family: 'Barlow', sans-serif;
+    color: white;
+}
+
+.service-wrapper svg{
+    margin-bottom: .5rem;
+}
+
+.service-wrapper .col-4{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
