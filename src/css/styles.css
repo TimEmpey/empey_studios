@@ -6,7 +6,7 @@ body{
     background-color: #000E1D;
     cursor: none;
 }
-a, p {
+html, a, p {
     cursor: none;
 }
 
@@ -36,6 +36,17 @@ a, p {
 }
 
 /*--------------------------- Nav Bar --------------------------- */
+.nav{
+    height: 10vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.nav img{
+    margin-left: 2vw;
+    height: 6vh;
+}
 
 /*----------------------------- Intro -----------------------------*/
 
@@ -50,7 +61,7 @@ a, p {
 .layer {
     background-color: #041629a9;
     position: absolute;
-    top: 0;
+    top: 10vh;
     left: 0;
     width: 100vw;
     height: 100vh;
@@ -99,6 +110,7 @@ a, p {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgb(255, 255, 255);
 }
 
 .approach {
@@ -108,79 +120,139 @@ a, p {
     background-color: #041629;
     border-radius: 8px;
     z-index: 1;
-    }
-    
-    .tools {
-    display: flex;
-    align-items: center;
-    padding: 9px;
-    }
-    
-    .circle {
-    padding: 0 4px;
-    }
-    
-    .box {
-    display: inline-block;
-    align-items: center;
-    width: 12px;
-    height: 12px;
-    padding: 1px;
-    border-radius: 50%;
-    }
-    
-    .red {
-    background-color: #ff605c;
-    }
-    
-    .yellow {
-    background-color: #ffbd44;
-    }
-    
-    .green {
-    background-color: #00ca4e;
-    }
-    
-    .approach .content{
-        font-family: 'Montserrat', sans-serif;
-        color: rgb(255, 255, 255);
-        padding-top: 5rem;
-        overflow-wrap: normal;
-    }
+}
 
-    .approach .col-6{
-        padding-inline: 6rem;
-    }
+.tools {
+display: flex;
+align-items: center;
+padding: 9px;
+}
 
-    .approach .statement{
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-    }
+.circle {
+padding: 0 4px;
+}
 
-    .statement h2{
-        font-weight: bold;
-        margin-bottom: 1rem;
-    }
+.box {
+display: inline-block;
+align-items: center;
+width: 12px;
+height: 12px;
+padding: 1px;
+border-radius: 50%;
+}
 
-    .statement p{
-        padding-right: 4vw;
-    }
+.red {
+background-color: #ff605c;
+}
 
-    .services_button{
-        background-color: transparent;
-        border-radius: 10px;
-        border: 1px solid rgb(255, 255, 255);
-        color: rgb(255, 255, 255);
-        padding: .75rem;
-    }
+.yellow {
+background-color: #ffbd44;
+}
 
-    .approach .number{
-        color: rgb(255, 136, 0);
-        font-size: 3rem;
-        font-weight: bold;
-    }
+.green {
+background-color: #00ca4e;
+}
 
-    .approach .step{
-        padding-top: 2rem;
-        font-weight: bold;
-    }
+.approach .content{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    padding-top: 5rem;
+    overflow-wrap: normal;
+}
+
+.approach .col-6{
+    padding-inline: 6rem;
+}
+
+.approach .statement{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.statement h2{
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.statement p{
+    padding-right: 4vw;
+}
+
+.services_button{
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    padding: .75rem;
+}
+
+.approach .number{
+    color: rgb(255, 136, 0);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.approach .step{
+    padding-top: 2rem;
+    font-weight: bold;
+}
+
+    /*-----------------------Our Work---------------------------- */
+
+.our_work{
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.promise{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.promise h2{
+    font-size: 3rem;
+    float: right;
+    padding-right: 5rem;
+}
+
+.promise p{
+    width: 25vw;
+    font-size: 1.25rem;
+    font-weight: lighter;
+    float: left;
+    padding-left: 5rem;
+}
+
+.client1{
+    position: relative;
+}
+
+.client1 .client_name{
+    position: absolute;
+    right:20vw;
+    top: 0;
+    z-index: 1;
+    font-size: 1.75rem;
+    width: 20vw;
+    border-bottom: 1px solid rgb(255, 136, 0);
+}
+
+.client1 .role{
+    position: absolute;
+    right:20vw;
+    top: 8vh;
+    width: 20vw;
+}
+
+.client1 .site_img{
+    z-index: 0;
+    height: 50vh;
+    width: 40vw;
+    object-fit: cover;
+    margin-left: 15vw;
+    transition: transform .5s;
+}
+
+.site_img:hover{
+    transform: scale(1.03);
+}
