@@ -10,22 +10,6 @@ a, p {
     cursor: none;
 }
 
-/*--------------------------- Scroller --------------------------- */
-/* .scroller {
-    height: 100vh;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-    display: flex;
-    flex-direction: column;
-}
-
-.scroller section {
-    scroll-snap-align: start;
-} */
-
-/*--------------------------- Nav Bar --------------------------- */
-
-
 /*---------------------------- Cursor ---------------------------*/
 .cursor {
     width: 20px;
@@ -51,28 +35,31 @@ a, p {
     opacity: .5;
 }
 
-/*-------------------------- Paragraph 1 -------------------------*/
-.company_statement{
-    background-color: #041629;
-    border-top: 1px solid #4D5761;
-    border-bottom: 1px solid #4D5761;
-    display: flex;
-    align-items: center;
-}
+/*--------------------------- Nav Bar --------------------------- */
 
-.text-wrapper{
+/*----------------------------- Intro -----------------------------*/
+
+.intro{
     height: 100vh;
     display: flex;
+    justify-content: center;
     align-items: center;
+    background-image: url('../img/office_chat.jpeg');
 }
 
-.paragraph1{
-    padding: 2rem;
+.layer {
+    background-color: #041629a9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
 }
 
 .paragraph1 h1{
     font-family: 'Montserrat', sans-serif;
     font-size: 3.5rem;
+    font-weight: bold;
     color: white;
     /* text-shadow: -2.5px 1.75px 2.5px rgba(0, 0, 0, 0.573); */
     margin-bottom: 2rem;
@@ -85,94 +72,15 @@ a, p {
     width: 40vw;
     /* text-shadow: -2.5px 1.75px 2.5px rgba(0, 0, 0, 0.573); */
 }
-
-/*-------------------------- Slogan Card -------------------------*/
-.box-wrapper{
-    display: flex;
-    align-items: center;
-    margin-inline: 10vw;
-    border-radius: 29px;
-    background: #041629;
-    width: 25vw;
-    height: 15vh;
-}
-
-.box {
-    width: 50vw;
-    height: 50vh;
-    border-radius: 29px;
-    background: white;
-    display: flex;
-}
-
-.box p {
-    height: 100%;
-    flex: 1;
-    overflow: hidden;
-    cursor: pointer;
-    transition: all .5s;
-    background: #dedede;
-    border: 1px solid #dedede;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: none;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.box p:hover{
-    flex: 4;
-    cursor: none;
-    color: #797979;
-    background-color: #000E1D ;
-}
-.inner-box1:hover{
-    background-image: url('../img/flow.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.inner-box2:hover{
-    background-image: url('../img/function.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.inner-box3:hover{
-    background-image: url('../img/data.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.inner-box1{
-    border-radius: 29px 0px 0px 29px;
-}
-.inner-box3{
-    border-radius: 0px 29px 29px 0px;
-}
-
-.box p span {
-    min-width: 14em;
-    padding: .5em;
-    text-align: center;
-    transform: rotate(-90deg);
-    transition: all .5s;
-    text-transform: uppercase;
-    /* color: rgb(188, 20, 188); */
-    letter-spacing: .1em;
-}
-
-.box p:hover span {
-    transform: rotate(0);
-}
-
-
 /*--------------------------- Services ---------------------------*/
+.service_section{
+    background-color: #041629;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+}
+
 .service-wrapper{
-    height: 50vh;
-    margin-top: 5vh;
-    margin-bottom: 15vh;
     font-family: 'Barlow', sans-serif;
     color: white;
 }
@@ -183,103 +91,96 @@ a, p {
 
 .service-wrapper .col-4{
     margin-top: 5vh;
-    margin-bottom: 5vh;
 }
 
-/*-------------------------- Footer Card -------------------------*/
-.landing_screen{
-    height: 100vh;
-    border-top: 1px solid #4D5761;
-    border-bottom: 1px solid #4D5761;
-    background-color: #041629;
-}
-
-.card {
-    width: 50vw;
-    height: 28vw;
-    padding: 0.5rem;
-    /* background: #c7c7c78e; */
-    background-image: url('../img/wp9583602.jpg');
-    background-position-y:  0rem;
-    border-radius: 20px;
-    backdrop-filter: blur(5px);
-    /* position: absolute; */
-    margin-inline: 25vw;
-    margin-top: 15vh;
-    margin-bottom: 15vh;
-    border-bottom: 10px solid rgba(137, 137, 137, 0.466);
-    border-left: 8px  rgba(137, 137, 137, 0.466) outset;
-    box-shadow: -40px 50px 30px rgba(0, 0, 0, 0.280);
-    transform: skewX(10deg);
-    transition: .4s;
-    overflow: hidden;
-    color: white;
-}
-
-.card:hover {
-    height: 45rem;
-    transform: skew(0deg);
-}
-
-.align {
-    padding: 1rem;
+/*--------------------------- Approach ---------------------------*/
+.approach_wrapper{
+    height: 150vh;
     display: flex;
-    flex-direction: row;
-    gap: 5px;
-    align-self: flex-start;
+    align-items: center;
+    justify-content: center;
 }
 
-.red {
-    width: 10px;
-    height: 10px;
+.approach {
+    width: 60vw;
+    height: 130vh;
+    margin: 0 auto;
+    background-color: #041629;
+    border-radius: 8px;
+    z-index: 1;
+    }
+    
+    .tools {
+    display: flex;
+    align-items: center;
+    padding: 9px;
+    }
+    
+    .circle {
+    padding: 0 4px;
+    }
+    
+    .box {
+    display: inline-block;
+    align-items: center;
+    width: 12px;
+    height: 12px;
+    padding: 1px;
     border-radius: 50%;
+    }
+    
+    .red {
     background-color: #ff605c;
-    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.280);
-}
-
-.yellow {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
+    }
+    
+    .yellow {
     background-color: #ffbd44;
-    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.280);
-}
-
-.green {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
+    }
+    
+    .green {
     background-color: #00ca4e;
-    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.280);
-}
+    }
+    
+    .approach .content{
+        font-family: 'Montserrat', sans-serif;
+        color: rgb(255, 255, 255);
+        padding-top: 5rem;
+        overflow-wrap: normal;
+    }
 
-.card h1 {
-    font-size: 5rem;
-    /* font-family: 'Montserrat', sans-serif; */
-    text-align: center;
-    margin: 2rem;
-    margin-top: 10rem;
-    text-shadow: -2.5px 1.75px 2.5px rgba(0, 0, 0, 0.573);
-}
+    .approach .col-6{
+        padding-inline: 6rem;
+    }
 
-.slogan{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
-    color: white;
-    position: relative;
-    text-align: center;
-    margin-top: 10vw;
-    /* text-shadow: -2.5px 1.75px 2.5px rgba(0, 0, 0, 0.573); */
-}
+    .approach .statement{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
 
-.trademark{
-    text-align: center;
-    color: white;
-}
+    .statement h2{
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
 
-.filler1{
-    width: 100vw;
-    height: 10vh;
-    /* background-image: linear-gradient(#DEDEDE, #2E102A); */
-    padding-bottom: 5vh;
-}
+    .statement p{
+        padding-right: 4vw;
+    }
+
+    .services_button{
+        background-color: transparent;
+        border-radius: 10px;
+        border: 1px solid rgb(255, 255, 255);
+        color: rgb(255, 255, 255);
+        padding: .75rem;
+    }
+
+    .approach .number{
+        color: rgb(255, 136, 0);
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+    .approach .step{
+        padding-top: 2rem;
+        font-weight: bold;
+    }
