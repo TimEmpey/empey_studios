@@ -38,10 +38,13 @@ body{
 /*--------------------------- Nav Bar --------------------------- */
 .nav{
     height: 10vh;
+    width: 101vw;
     background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: fixed;
+    z-index: 2;
 }
 
 .nav img{
@@ -102,19 +105,19 @@ body{
 
 .intro{
     height: 100vh;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('../img/office_chat.jpeg');
+    z-index: 1;
 }
 
-.layer {
-    background-color: #041629a9;
-    position: absolute;
-    top: 10vh;
-    left: 0;
-    width: 100vw;
+.intro_bg{
     height: 100vh;
+    width: 100vw;
+    position: absolute;
+    opacity: 0.3;
+    background-image: url('../img/office_chat.jpeg');
 }
 
 .paragraph1 h1{
@@ -122,16 +125,16 @@ body{
     font-size: 3.5rem;
     font-weight: bold;
     color: white;
-    /* text-shadow: -2.5px 1.75px 2.5px rgba(0, 0, 0, 0.573); */
     margin-bottom: 2rem;
+    z-index: 2;
 }
 
 .paragraph1 p{
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
-    color: white;
+    color: rgb(255, 255, 255);
     width: 40vw;
-    /* text-shadow: -2.5px 1.75px 2.5px rgba(0, 0, 0, 0.573); */
+    z-index: 2;
 }
 /*--------------------------- Services ---------------------------*/
 .service_section{
@@ -257,6 +260,7 @@ background-color: #00ca4e;
 .promise{
     padding-top: 10vh;
     padding-bottom: 10vh;
+    width: 100vw;
 }
 
 .promise h2{
