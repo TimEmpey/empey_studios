@@ -276,8 +276,8 @@ background-color: #00ca4e;
 
 .client1{
     position: relative;
+    margin-bottom: 5vh;
 }
-
 .client1 .client_name{
     position: absolute;
     right:20vw;
@@ -287,15 +287,70 @@ background-color: #00ca4e;
     width: 20vw;
     border-bottom: 1px solid rgb(255, 136, 0);
 }
-
 .client1 .role{
     position: absolute;
     right:20vw;
     top: 8vh;
     width: 20vw;
 }
-
 .client1 .site_img{
+    z-index: 0;
+    height: 50vh;
+    width: 40vw;
+    object-fit: cover;
+    margin-left: 15vw;
+    transition: transform .5s;
+}
+
+.client2{
+    position: relative;
+    margin-top: 5vh;
+}
+.client2 .client_name{
+    position: absolute;
+    left:20vw;
+    top: 0;
+    z-index: 1;
+    font-size: 1.75rem;
+    width: 20vw;
+    border-bottom: 1px solid rgb(255, 136, 0);
+}
+.client2 .role{
+    position: absolute;
+    left:20vw;
+    top: 8vh;
+    width: 20vw;
+}
+.client2 .site_img{
+    z-index: 0;
+    height: 50vh;
+    width: 40vw;
+    object-fit: cover;
+    margin-left: 45vw;
+    transition: transform .5s;
+}
+
+.client3{
+    position: relative;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+}
+.client3 .client_name{
+    position: absolute;
+    right:20vw;
+    top: 0;
+    z-index: 1;
+    font-size: 1.75rem;
+    width: 20vw;
+    border-bottom: 1px solid rgb(255, 136, 0);
+}
+.client3 .role{
+    position: absolute;
+    right:20vw;
+    top: 8vh;
+    width: 20vw;
+}
+.client3 .site_img{
     z-index: 0;
     height: 50vh;
     width: 40vw;
