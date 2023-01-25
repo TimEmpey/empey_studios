@@ -1,9 +1,10 @@
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
+import './css/contact.css';
 // import './css/loader.css';
-import './parallax/parallax.js'
-import './parallax/parallax.css'
+import './parallax/parallax.js';
+import './parallax/parallax.css';
 
 //  Nav Bar scroll
 

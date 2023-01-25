@@ -1,0 +1,249 @@
+.form{
+    margin-top: 15vh;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form h1{
+    color: #999999;
+}
+
+/*----------------------------------------------------------------*/
+
+.wave-group1 {
+    position: relative;
+    margin-bottom: 5vh;
+}
+
+.wave-group1 .input {
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 20vw;
+    border: none;
+    color: white;
+    border-bottom: 1px solid #515151;
+    background: transparent;
+}
+
+.wave-group1 .input:focus {
+    outline: none;
+}
+
+.wave-group1 .label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    display: flex;
+}
+
+.wave-group1 .label-char1 {
+    transition: 0.2s ease all;
+    /* transition-delay: calc(var(--index) * .05s); */
+}
+
+.wave-group1 .input:focus ~ label .label-char1,
+.wave-group1 .input:valid ~ label .label-char1 {
+    transform: translateY(-20px);
+    font-size: 14px;
+    color: #5264AE;
+}
+
+.wave-group1 .bar {
+    position: relative;
+    display: block;
+    width: 20vw;
+}
+
+.wave-group1 .bar:before,.wave-group1 .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #5264AE;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.wave-group1 .bar:before {
+    left: 50%;
+}
+
+.wave-group1 .bar:after {
+    right: 50%;
+}
+
+.wave-group1 .input:focus ~ .bar:before,
+.wave-group1 .input:focus ~ .bar:after {
+    width: 50%;
+}
+
+/*------------------------------------------------------------------*/
+
+.wave-group2 {
+    position: relative;
+    margin-bottom: 5vh;
+}
+
+.wave-group2 .input {
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 20vw;
+    border: none;
+    color: white;
+    border-bottom: 1px solid #515151;
+    background: transparent;
+}
+
+.wave-group2 .input:focus {
+    outline: none;
+}
+
+.wave-group2 .label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    display: flex;
+}
+
+.wave-group2 .label-char2 {
+    transition: 0.2s ease all;
+    /* transition-delay: calc(var(--index) * .05s); */
+}
+
+.wave-group2 .input:focus ~ label .label-char2,
+.wave-group2 .input:valid ~ label .label-char2 {
+    transform: translateY(-20px);
+    font-size: 14px;
+    color: #5264AE;
+}
+
+.wave-group2 .bar {
+    position: relative;
+    display: block;
+    width: 20vw;
+}
+
+.wave-group2 .bar:before,.wave-group2 .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #5264AE;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.wave-group2 .bar:before {
+    left: 50%;
+}
+
+.wave-group2 .bar:after {
+    right: 50%;
+}
+
+.wave-group2 .input:focus ~ .bar:before,
+.wave-group2 .input:focus ~ .bar:after {
+    width: 50%;
+}
+
+/*------------------------------------------------------------------*/
+
+.wave-group3 {
+    position: relative;
+    margin-bottom: 5vh;
+}
+
+.wave-group3 .input {
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 20vw;
+    border: none;
+    color: white;
+    border-bottom: 1px solid #515151;
+    background: transparent;
+}
+
+.wave-group3 .input:focus {
+    outline: none;
+}
+
+.wave-group3 .label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    display: flex;
+}
+
+.wave-group3 .label-char3 {
+    transition: 0.2s ease all;
+    /* transition-delay: calc(var(--index) * .05s); */
+}
+
+.wave-group3 .input:focus ~ label .label-char3,
+.wave-group3 .input:valid ~ label .label-char3 {
+    transform: translateY(-20px);
+    font-size: 14px;
+    color: #5264AE;
+}
+
+.wave-group3 .bar {
+    position: relative;
+    display: block;
+    width: 20vw;
+}
+
+.wave-group3 .bar:before,.wave-group3 .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #5264AE;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.wave-group3 .bar:before {
+    left: 50%;
+}
+
+.wave-group3 .bar:after {
+    right: 50%;
+}
+
+.wave-group3 .input:focus ~ .bar:before,
+.wave-group3 .input:focus ~ .bar:after {
+    width: 50%;
+}
+
+
+/*------------------------------------------------------------------*/
+
+.contact-background{
+    background-image: url('../img/mind-prong-phones.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh
+}
