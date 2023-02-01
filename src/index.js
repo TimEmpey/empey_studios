@@ -1,5 +1,6 @@
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './css/navbar.css';
 import './css/styles.css';
 import './css/contact.css';
 // import './css/loader.css';

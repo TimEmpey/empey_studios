@@ -35,73 +35,6 @@ body{
     opacity: .5;
 } */
 
-/*--------------------------- Nav Bar --------------------------- */
-.nav{
-    height: 10vh;
-    width: 101vw;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    z-index: 2;
-    transition: top 0.3s;
-    top: 0;
-}
-
-.nav img{
-    margin-left: 2vw;
-    height: 6vh;
-    padding-right: 3vw;
-    float: left;
-}
-
-.nav p{
-    margin-top: 1vh;
-    margin-inline: 1vw;
-    font-size: 1.1rem;
-    font-weight: bold;
-}
-
-.nav a{
-    text-decoration: none;
-}
-
-.nav p {
-    color: #3c3c3c;
-    cursor: pointer;
-    position: relative;
-    text-transform: uppercase;
-    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-    transition-duration: 400ms;
-    transition-property: color;
-}
-
-.nav p:focus,
-.nav p:hover {
-    color: rgb(0, 0, 0);
-}
-
-.nav p:focus:after,
-.nav p:hover:after {
-    width: 100%;
-    left: 0%;
-}
-
-.nav p:after {
-    content: "";
-    pointer-events: none;
-    bottom: -2px;
-    left: 50%;
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    background-color: rgb(0, 0, 0);
-    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-    transition-duration: 400ms;
-    transition-property: width, left;
-}
-
 /*----------------------------- Intro -----------------------------*/
 
 .intro{
@@ -117,8 +50,11 @@ body{
     height: 100vh;
     width: 100vw;
     position: absolute;
-    opacity: 0.3;
-    background-image: url('../img/office_chat.jpeg');
+    opacity: 0.4;
+    background-image: url('../img/mind-prong-phones.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .paragraph1 h1{
@@ -247,8 +183,18 @@ background-color: #00ca4e;
 }
 
 .approach .step{
-    padding-top: 2rem;
+    padding-top: 10%;
     font-weight: bold;
+    font-size: 1rem;
+}
+
+.approach .first_step{
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.approach p{
+    font-size: .75rem;
 }
 
     /*-----------------------Our Work---------------------------- */
@@ -433,4 +379,142 @@ footer h2:after {
     transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
     transition-duration: 400ms;
     transition-property: width, left;
+}
+
+
+/*-----------------  Home Page -----------------*/
+@media only screen and (orientation: portrait) {
+
+    /*-----------------  Intro -----------------------*/
+    .intro{
+        height: 50vh;
+        width: 100vw;
+    }
+    
+    .intro_bg{
+        height: 50vh;
+        width: 100vw;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+
+    /*-------------------- Services -----------------*/
+.service_section{
+    background-color: #ffffff;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+}
+
+.service-wrapper{
+    font-family: 'Barlow', sans-serif;
+    /* color: white; */
+}
+
+.service-wrapper svg{
+    margin-bottom: .5rem;
+}
+
+.service-wrapper .col-4{
+    margin-top: 5vh;
+}
+
+
+
+    /*-----------------  Approach -----------------*/
+    .approach_wrapper{
+        height: 110vh;
+    }
+    
+    .approach {
+        width: 90vw;
+        height: 100vh;
+        margin: 0 auto;
+        border-radius: 8px;
+        z-index: 1;
+    }
+    
+    .tools {
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    }
+    
+    .circle {
+    padding: 0 4px;
+    }
+    
+    .box {
+    width: 20px;
+    height: 20px;
+    }
+    
+    .approach .col-6{
+        padding-inline: 3rem;
+    }
+    
+    .approach .statement{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    
+    .statement h2{
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+    
+    .statement p{
+        padding-right: 4vw;
+    }
+    
+    .services_button{
+        background-color: transparent;
+        border-radius: 10px;
+        padding: .75rem;
+    }
+    
+    .approach .number{
+        font-size: 4rem;
+        font-weight: bold;
+    }
+    
+    .approach .step{
+        padding-top: 10%;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    
+    .approach .first_step{
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    
+    .approach p{
+        font-size: 1.5rem;
+    }
+
+
+    /*--------------- Footer -----------------*/
+
+footer{
+    height: 30vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+footer img{
+    margin-bottom: 20vh;
+    width: 15vh;
+}
+
+footer .col-4{
+    margin-top: 10vh;
+}
+
+footer p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+}
 }
